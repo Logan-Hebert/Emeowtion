@@ -18,10 +18,35 @@
 <script src="/scripts/index.js" defer></script>
 
 <h1 class="d-flex justify-content-evenly position-absolute start-50 translate-middle-x" style="top: 15%;"> How're you feeling?</h1>
-<div class="d-flex justify-content-between position-absolute start-50 translate-middle-x gap-4" style="top: 40%;">
-    <img class="border border-secondary rounded-2 border-3" src="./images/grumpy-cat.png" alt="A grumpy cat... no, THE grumpy cat" style="width: 20%; aspect-ratio: 1 / 1; object-fit: cover;">
-    <img class="border border-secondary rounded-2 border-3" src="./images/happy-cat.jpg" alt="A happy cat" style="width: 20%; aspect-ratio: 1 / 1; object-fit: cover;">
+<div class="btn-group d-flex justify-content-between position-absolute start-50 translate-middle-x gap-4" style="top: 40%;">
+
+    <input type="radio" class="btn-check" name="imageSelect" id="img1" autocomplete="off">
+    <label class="btn btn-secondary border-1 p-2" for="img1" style="width: 20%">
+        <img src="./images/grumpy-cat.png" alt="A grumpy cat... no, THE grumpy cat" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 2%;">
+    </label>
+
+    <input type="radio" class="btn-check" name="imageSelect" id="img2" autocomplete="off">
+    <label class="btn btn-secondary border-1 p-2" for="img2" style="width: 20%">
+        <img src="./images/grumpy-cat.png" alt="A grumpy cat... no, THE grumpy cat" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 2%;">
+    </label>
+
+    <input type="radio" class="btn-check" name="imageSelect" id="img3" autocomplete="off">
+    <label class="btn btn-secondary border-1 p-2" for="img3" style="width: 20%">
+        <img src="./images/happy-cat.jpg" alt="A happy cat" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 2%;">
+    </label>
+
+    <input type="radio" class="btn-check" name="imageSelect" id="img4" autocomplete="off">
+    <label class="btn btn-secondary border-1 p-2" for="img4" style="width: 20%">
+        <img src="./images/happy-cat.jpg" alt="A happy cat" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 2%;">
+    </label>
+
+    <input type="radio" class="btn-check" name="imageSelect" id="img5" autocomplete="off">
+    <label class="btn btn-secondary border-1 p-2" for="img5" style="width: 20%">
+        <img src="./images/happy-cat.jpg" alt="A happy cat" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 2%;">
+    </label>
+
 </div>
+<button class="btn btn-outline-success border-5 position-absolute start-50 translate-middle-x" style="top: 75%; font-size: 54px;">Submit</button>
 
 
 </body>

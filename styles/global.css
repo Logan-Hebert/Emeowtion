@@ -2,9 +2,9 @@
 
 :root{
 
-    --bs-primary: #BBDCE5;
+    --bs-primary: #feb5d1;
     --bs-primary-half-dark: #A3C0C8;
-    --bs-primary-dark: #8fa9b0;
+    --bs-primary-dark: #FE9EC7;
     --bs-primary-double-dark: #6c8184;
     --bs-secondary: #ECEEDF;
     --bs-accent: #D9C4B0;
@@ -12,18 +12,18 @@
 }
 
 body {
-    background: linear-gradient(-45deg, var(--bs-primary), var(--bs-secondary), var(--bs-accent));
+    background: linear-gradient(-45deg, var(--bs-primary-dark), var(--bs-accent-dark));
 }
 
 .btn-primary {
-    --bs-btn-bg: var(--bs-primary-dark);
-    --bs-btn-border-color: var(--bs-primary-dark);
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
 
     --bs-btn-hover-bg: var(--bs-primary-dark);
     --bs-btn-hover-border-color: var(--bs-primary-dark);
 
-    --bs-btn-active-bg: var(--bs-primary-double-dark);
-    --bs-btn-active-border-color: var(--bs-primary-double-dark);
+    --bs-btn-active-bg: var(--bs-primary-dark);
+    --bs-btn-active-border-color: var(--bs-primary-dark);
 }
 
 .btn-primary:hover {

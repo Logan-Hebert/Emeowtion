@@ -2,16 +2,18 @@ import { sadCatNum, sadDogNum, sadFishNum, sadHorseNum, sadPandaNum,
     happyCatNum, happyDogNum, happyFishNum, happyHorseNum, happyPandaNum,
 } from "../images/Memes/imageManager.js";
 let moodAnimal = "cat"; 
-const joyMeter= 1;
-let randOption, joyType;
+let joyMeter= 1;
+let zOpt, joyType;
 // import { getAnimalType } from "./index.js";
 //import { getJoyMeter } from "./index.js";
 //joyMeter = getJoyMeter();
 // moodAnimal = getAnimalType();
 
-
 function getRandOption(min, max) {
-    rNum= Math.floor(Math.random() * (max - min + 1)) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function optionPicker() {
+    let randOption;
     if (moodAnimal == "cat"){
         if (joyMeter <= 2){
             randOption = getRandOption(1, sadCatNum);
@@ -43,12 +45,14 @@ function getRandOption(min, max) {
             randOption = getRandOption(1, happyPandaNum);
         }
 }
+return randOption;
 }
 
-function displayMeme(moodAnimal, joyType, randOption){
+function displayMeme(moodAnimal, joyType, option){
     // document.getElementById("animal-type").innerHTML = moodAnimal;
-    document.getElementById("joy-meter").innerHTML = joyType;
-    document.getElementById("image-num").innerHTML = randOption;
+    // document.getElementById("joy-meter").innerHTML = joyType;
+    // document.getElementById("image-num").innerHTML = randOption;
+    document.getElementById('meme-image').src = `images/Memes/${moodAnimal}/${joyType}${moodAnimal}${option}.jpg`;
 }
 
 if  (joyMeter <= 2){
@@ -56,7 +60,8 @@ if  (joyMeter <= 2){
   } else {
     joyType = "goodNMehDay/happy";
   }
-displayMeme(moodAnimal, joyType, randOption);
+zOpt = getRandOption(1, sadCatNum);
+displayMeme(moodAnimal, joyType, zOpt);
   
 
 

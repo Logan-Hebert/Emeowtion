@@ -4,6 +4,7 @@ import { sadCatNum, sadDogNum, sadFishNum, sadHorseNum, sadPandaNum,
 let moodAnimal = "cat"; 
 const joyMeter= 1;
 let randOption, joyType;
+let randOption, joyType;
 // import { getAnimalType } from "./index.js";
 //import { getJoyMeter } from "./index.js";
 //joyMeter = getJoyMeter();

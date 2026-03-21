@@ -1,10 +1,5 @@
 //not using node.js, so need to put file nums manually since cant directly read files from folders.
-const catMemeNum = 1;
-const dogMemeNum = 0;
-const horseMemeNum = 0;
-const fishMemeNum = 0;
-const pandaMemeNum = 0;
-//THIS IS FOR THE MEMES IMAGES ONLY
+//THIS IS FOR MEME IMAGES ONLY
 const sadCatNum = 1;
 const sadDogNum = 0;
 const sadHorseNum = 0;

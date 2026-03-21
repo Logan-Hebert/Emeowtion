@@ -3,7 +3,7 @@ import { sadCatNum, sadDogNum, sadFishNum, sadHorseNum, sadPandaNum,
 } from "../images/Memes/imageManager.js";
 let moodAnimal = "cat"; 
 const joyMeter= 1;
-let randOption = 0;
+let randOption, joyType;
 // import { getAnimalType } from "./index.js";
 //import { getJoyMeter } from "./index.js";
 //joyMeter = getJoyMeter();
@@ -45,13 +45,18 @@ function getRandOption(min, max) {
 }
 }
 
-function displayMeme(moodAnimal, joyMeter) {
-    document.getElementById("animal-type").innerHTML = moodAnimal;
-    document.getElementById("joy-meter").innerHTML = joyMeter;
-    document.getElementById("joy-meter").innerHTML = joyMeter;
+function displayMeme(moodAnimal, joyType, randOption){
+    // document.getElementById("animal-type").innerHTML = moodAnimal;
+    document.getElementById("joy-meter").innerHTML = joyType;
+    document.getElementById("image-num").innerHTML = randOption;
 }
 
-
+if  (joyMeter <= 2){
+    joyType = "badDay/sad";
+  } else {
+    joyType = "goodNMehDay/happy";
+  }
+displayMeme(moodAnimal, joyType, randOption);
   
 
 

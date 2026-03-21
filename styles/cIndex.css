@@ -11,8 +11,8 @@ body {
 }
 
 section {
-    width:1088px;
-    height: 960px;
+    width:80vw;
+    height: 90vh;
     /* background-color: rgba(255, 4, 4, 0.863); */
     position: absolute;
     top: 50%;
@@ -30,35 +30,35 @@ article {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 3rem;
     color: rgb(255, 255, 255);
 }
 
 h2 {
-    font-size: 96px;
+    font-size: 6rem;
     color: rgb(255, 255, 255);
 }
 
 p {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: rgb(255, 255, 255);
 }
  
 
 li {
-    width: 288px;
-    height: 320px;
-    position:absolute;
+    width: 20vw;
+    height: 30vh;
+    position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 24px;
+    border-radius: 1.5rem;
     
 }
 
 li p {
     color:  rgb(255, 177, 177);
-     font-size: 64px;
+     font-size: 4rem;
      font-weight: bold;
 }
 
@@ -91,24 +91,24 @@ li .details {
     position: absolute;
     left: 35%;
     top: 75%;
-    font-size: 24px;
+    font-size: 1.5rem;
 
 }
 .controls {
     position: absolute;
-    bottom: 125px;
+    bottom: 10vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 24px;
+    gap: 2vw;
 }
 
 .controls button {
     border: 0;
-    width: 86.4px;
+    width: 6vw;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    font-size: 70.4px;
+    font-size: 3.5rem;
     cursor: pointer;
     transform: all 300ms ease;
 }

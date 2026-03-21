@@ -3,12 +3,22 @@ let joyLevel = 1;
 // joyLevel = getJoyMeter();
 
 
-const happy = ["Look at you! You got this!", "You chose to be happy today, and it looks good on you.", "Your smile will change the world, don't forget that!"]; 
-const happyAuthors = ["- Anonymous", "- Anonymous", "- Anonymous"];
-const mid = ["Some things are hard, but all that matters is making the most of it", "You release what you cannot control", "Life is what you make it, don't let anyone dim that"];
-const midAuthors = ["- Anonymous", "- Anonymous", "- Anonymous"];
-const sad = ["You are not the bad feelings, you're just going through the storm", "You are enough just as you are", "You survived all your bad days so far, so keep going"];
-const sadAuthors = ["- Anonymous", "- Anonymous", "- Anonymous"];
+
+
+
+
+
+
+const happy = ["Happiness depends upon ourselves.", "The best thing about the future is that it comes one day at a time.",
+     "Happiness is not something ready made. It comes from your own actions."]; 
+const happyAuthors = ["Aristotle", "Abraham Lincoln", "Dalai Lama"];
+const mid = ["Whatever you decide to do make sure it makes you happy.", 
+    "If you want to live a happy life, tie it to a goal, not to people or things.", 
+    "Learn to let go. That is the key to happiness."];
+const midAuthors = ["Paulo Coelho", "Albert Einstein", "Buddha"];
+const sad = ["Don’t cry because it’s over, smile because it happened.", "Happiness is a journey, not a destination.",
+     "Action may not always bring happiness; but there is no happiness without action."];
+const sadAuthors = ["Dr. Seuss", "Ben Sweetland", "Benjamin Disraeli"];
  function getRandomHappy(min=0, max=happy.length-1) {
     const rand = Math.floor(Math.random() * (max - min + 1)) + min;
     let arr = happy[rand];

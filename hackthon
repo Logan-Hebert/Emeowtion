@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>External JavaScript Example</title>
+</head>
+<body>
+    <h1>JavaScript from an external file</h1>
+    <p id="output"></p>
+    
+    <!-- Link the external script file using the src attribute -->
+    <script src="script.js"></script>
+</body>
+</html>

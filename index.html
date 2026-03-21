@@ -12,6 +12,10 @@
     <link href="styles/index.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
+        #submitBtn {
+            transition: 0.2s;
+        }
+
         .image-choice img {
             transition: 0.2s;
             filter: brightness(60%);
@@ -41,41 +45,42 @@
 </head>
 <body class="bg-light text-center">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="/scripts/global.js" defer></script>
-<script src="/scripts/index.js" defer></script>
+
+<script src="./scripts/global.js" defer></script>
+<script src="./scripts/index.js" defer></script>
 
 
 
 <h1 class="position-absolute start-50 translate-middle-x" style="top: 15%;"> How're you feeling?</h1>
 <div class="w-75 d-flex justify-content-center position-absolute start-50 translate-middle-x gap-5" style="top: 35%;">
 
-    <input type="radio" class="btn-check" name="imageSelect" id="img1" autocomplete="off">
+    <input value="1" type="radio" class="btn-check" name="imageSelect" id="img1" autocomplete="off">
     <label class="image-choice btn btn-secondary border-1 p-2 rounded-2" for="img1" style="">
         <img src="./images/grumpy-cat.png" alt="A grumpy cat... no, THE grumpy cat" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 2%;">
     </label>
 
-    <input type="radio" class="btn-check" name="imageSelect" id="img2" autocomplete="off">
+    <input value="2" type="radio" class="btn-check" name="imageSelect" id="img2" autocomplete="off">
     <label class="image-choice btn btn-secondary border-1 p-2 rounded-2" for="img2" style="">
         <img src="./images/grumpy-cat.png" alt="A grumpy cat... no, THE grumpy cat" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 2%;">
     </label>
 
-    <input type="radio" class="btn-check" name="imageSelect" id="img3" autocomplete="off">
+    <input value="3" type="radio" class="btn-check" name="imageSelect" id="img3" autocomplete="off">
     <label class="image-choice btn btn-secondary border-1 p-2 rounded-2" for="img3" style="">
         <img src="./images/happy-cat.jpg" alt="A happy cat" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 2%;">
     </label>
 
-    <input type="radio" class="btn-check" name="imageSelect" id="img4" autocomplete="off">
+    <input value="4" type="radio" class="btn-check" name="imageSelect" id="img4" autocomplete="off">
     <label class="image-choice btn btn-secondary border-1 p-2 rounded-2" for="img4" style="">
         <img src="./images/happy-cat.jpg" alt="A happy cat" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 2%;">
     </label>
 
-    <input type="radio" class="btn-check" name="imageSelect" id="img5" autocomplete="off">
+    <input value="5" type="radio" class="btn-check" name="imageSelect" id="img5" autocomplete="off">
     <label class="image-choice btn btn-secondary border-1 p-2 rounded-2" for="img5" style="">
         <img src="./images/happy-cat.jpg" alt="A happy cat" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 2%;">
     </label>
 
 </div>
-<button class="btn btn-outline-success border-5 position-absolute start-50 translate-middle-x" style="top: 75%; font-size: 54px;">Submit</button>
+<button id="submitBtn" class="btn btn-outline-success disabled border-5 position-absolute start-50 translate-middle-x" style="top: 75%; font-size: 54px;">Submit</button>
 
 
 </body>

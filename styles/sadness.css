@@ -1,7 +1,7 @@
  .title {
-    background-color:  var(--bs-accent-dark);
+    background-image: linear-gradient(-5deg, var(--bs-primary-half-dark), var(--bs-primary-dark));
     font-family: 'Arial', sans-serif;
-    color: #99bcde;
+    color: #392B58;
     margin: 0 auto;
     padding: 10px;
      border-radius: 0 0 20px 20px; 
@@ -34,7 +34,7 @@
 .blockquote {
   font-family: 'Georgia', serif;
   text-align: center;
-  background-color: #a24a4a; 
+  background: var(--bs-primary-half-dark); 
   color: #555;
   display: inline-block;
   padding: 23px;
@@ -45,6 +45,6 @@
     font-style: italic;
 }
 .test {
-  background: #A3C0C8 !important;
+  background: #dfebee;
 }
 

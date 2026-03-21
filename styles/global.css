@@ -17,10 +17,14 @@
     --bs-btn-active-bg: var(--bs-primary-dark);
     --bs-btn-active-border-color: var(--bs-primary-dark);
 }
+
 .btn-primary:hover {
     background-color: #8fa9b0;
-    border-color: #8fa9b0;
+    border-color: var(--bs-primary-dark);
+
 }
+
+
 
 .btn-secondary {
     background-color: var(--bs-secondary);

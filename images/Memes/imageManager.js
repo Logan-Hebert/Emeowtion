@@ -1,5 +1,6 @@
 //not using node.js, so need to put file nums manually since cant directly read files from folders.
 //THIS IS FOR MEME IMAGES ONLY
+let catMemeNum, dogMemeNum, horseMemeNum, fishMemeNum, pandaMemeNum, totalMemeNum;
 const sadCatNum =  1;
 const sadDogNum = 0;
 const sadHorseNum = 0;
@@ -19,3 +20,9 @@ fishMemeNum = sadFishNum + happyFishNum;
 pandaMemeNum = sadPandaNum + happyPandaNum;
 
 totalMemeNum = catMemeNum + dogMemeNum + horseMemeNum + fishMemeNum + pandaMemeNum;
+
+export { sadCatNum, sadDogNum, sadFishNum, sadHorseNum, sadPandaNum,
+    happyCatNum, happyDogNum, happyFishNum, happyHorseNum, happyPandaNum,
+    catMemeNum, dogMemeNum, horseMemeNum, fishMemeNum, pandaMemeNum,
+    totalMemeNum,
+};

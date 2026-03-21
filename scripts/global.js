@@ -19,9 +19,6 @@ function deleteCookie(name) {
 }
 
 setCookie("test", "Hello World!", 1);
-setCookie("favoritePet", "cat", 365);
-
-
 
 getCookie("test");
 getCookie("favoritePet");

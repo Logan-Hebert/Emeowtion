@@ -1,4 +1,4 @@
-const animal = "cat"; 
+const anim = "cat"; 
 // import { getAnimalType } from "./index.js";
 // animal = getAnimalType();
-document.getElementById("animal-type").innerHTML = animal;
+document.getElementById("animal-type").innerHTML = anim;

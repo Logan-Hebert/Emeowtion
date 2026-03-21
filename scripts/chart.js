@@ -2,6 +2,7 @@ const chartElement = document.querySelector("#myChart");
 
 let data = []
 
+// TODO: Get data from cookies
 // Format for data:
 // {
 //   x: 1,
@@ -14,6 +15,8 @@ for (let i = 1; i < 31; i++) {
         y: Math.ceil(Math.random() * 5),
     })
 }
+
+
 
 console.log(data)
 

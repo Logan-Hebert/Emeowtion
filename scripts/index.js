@@ -1,5 +1,6 @@
 // This will run on index.html when it is opened
 
+<<<<<<< HEAD
 console.log("Hello World!");
 
 const submit = document.getElementById('submitBtn')
@@ -43,3 +44,7 @@ function handleSelection(value) {
     setCookie("moodDay" + new Date().getDate(), value, 30);
     getCookie("moodDay" + new Date().getDate());
 }
+=======
+// Carousel
+const carousel = new bootstrap.Carousel('#myCarousel')
+>>>>>>> 4f118e986443ccd7059255b5d6274a3eb79d686d

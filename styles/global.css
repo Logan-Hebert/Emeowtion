@@ -1,10 +1,28 @@
 /* This css file will be applied to all html files */
 
+<<<<<<< HEAD
 :root{
     --bs-primary: #BBDCE5;
     --bs-primary-half-dark: #A3C0C8;
     --bs-primary-dark: #8fa9b0;
     --bs-secondary: #ECEEDF;
+=======
+/* This css file will be applied to all html files */
+
+:root{
+
+    --bs-primary: #feb5d1;
+    --bs-primary-half-dark: #A3C0C8;
+    --bs-primary-dark: #FE9EC7;
+    --bs-primary-double-dark: #6c8184;
+    --bs-secondary: #ECEEDF;
+    --bs-accent: #D9C4B0;
+    --bs-accent-dark: #CFAB8D;
+}
+
+body {
+    background: linear-gradient(-45deg, var(--bs-primary-dark), var(--bs-accent-dark));
+>>>>>>> 4f118e986443ccd7059255b5d6274a3eb79d686d
 }
 
 .btn-primary {

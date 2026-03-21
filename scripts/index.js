@@ -26,6 +26,7 @@ submit.addEventListener("click", function() {
 
     handleSelection(selected.value + 0);
 
+    getCookie("moodDay" + new Date().getDate());
 })
 
 function handleSelection(value) {
@@ -40,4 +41,5 @@ function handleSelection(value) {
     // of the month), the time (hour is good enough), and the mood (1-5) as a single entry
     // in like an array or list or something.
 
+    setCookie("moodDay" + new Date().getDate(), value, 30);
 }

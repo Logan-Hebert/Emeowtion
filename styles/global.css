@@ -1,2 +1,37 @@
 /* This css file will be applied to all html files */
 
+:root{
+    --bs-primary: #BBDCE5;
+    --bs-primary-half-dark: #A3C0C8;
+    --bs-primary-dark: #8fa9b0;
+    --bs-secondary: #ECEEDF;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+
+    --bs-btn-hover-bg: var(--bs-primary-dark);
+    --bs-btn-hover-border-color: var(--bs-primary-dark);
+
+    --bs-btn-active-bg: var(--bs-primary-dark);
+    --bs-btn-active-border-color: var(--bs-primary-dark);
+}
+.btn-primary:hover {
+    background-color: #8fa9b0;
+    border-color: #8fa9b0;
+}
+
+.btn-secondary {
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary);
+}
+
+.btn-secondary:hover {
+    background-color: #afb2a4;
+    border-color: #afb2a4;
+}
+
+.btn-outline-success {
+    border-color: var(--bs-success);
+}

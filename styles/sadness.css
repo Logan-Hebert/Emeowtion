@@ -1,14 +1,19 @@
- .test {
+ .jumbotron {
     background-color: #112a44;
     font-family: 'Arial', sans-serif;
     color: #99bcde;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
      border-radius: 0 0 20px 20px; 
     /* max-width: 800px; */
  
   /* padding: 2rem; */
-
+}
+.meme {
+  padding: 10px; /* Adds 10px padding to all four sides */
+  max-width: 100%;
+  max-height: 500px;
+  height: auto;
 }
 
 

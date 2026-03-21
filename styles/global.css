@@ -1,21 +1,29 @@
 /* This css file will be applied to all html files */
 
 :root{
+
     --bs-primary: #BBDCE5;
     --bs-primary-half-dark: #A3C0C8;
     --bs-primary-dark: #8fa9b0;
+    --bs-primary-double-dark: #6c8184;
     --bs-secondary: #ECEEDF;
+    --bs-accent: #D9C4B0;
+    --bs-accent-dark: #CFAB8D;
+}
+
+body {
+    background: linear-gradient(-45deg, var(--bs-primary), var(--bs-secondary), var(--bs-accent));
 }
 
 .btn-primary {
-    --bs-btn-bg: var(--bs-primary);
-    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-bg: var(--bs-primary-dark);
+    --bs-btn-border-color: var(--bs-primary-dark);
 
     --bs-btn-hover-bg: var(--bs-primary-dark);
     --bs-btn-hover-border-color: var(--bs-primary-dark);
 
-    --bs-btn-active-bg: var(--bs-primary-dark);
-    --bs-btn-active-border-color: var(--bs-primary-dark);
+    --bs-btn-active-bg: var(--bs-primary-double-dark);
+    --bs-btn-active-border-color: var(--bs-primary-double-dark);
 }
 
 .btn-primary:hover {

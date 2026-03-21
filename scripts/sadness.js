@@ -1,3 +1,4 @@
-const userName = "Alex"; 
-import { getAnimalType } from " ./index.js";
-document.getElementById("user-name").innerHTML = userName;
+const animal = "cat"; 
+// import { getAnimalType } from "./index.js";
+// animal = getAnimalType();
+document.getElementById("animal-type").innerHTML = animal;

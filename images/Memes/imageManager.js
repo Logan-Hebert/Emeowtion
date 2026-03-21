@@ -19,3 +19,9 @@ fishMemeNum = sadFishNum + happyFishNum;
 pandaMemeNum = sadPandaNum + happyPandaNum;
 
 totalMemeNum = catMemeNum + dogMemeNum + horseMemeNum + fishMemeNum + pandaMemeNum;
+
+export { sadCatNum, sadDogNum, sadFishNum, sadHorseNum, sadPandaNum,
+    happyCatNum, happyDogNum, happyFishNum, happyHorseNum, happyPandaNum,
+    catMemeNum, dogMemeNum, horseMemeNum, fishMemeNum, pandaMemeNum,
+    totalMemeNum,
+};

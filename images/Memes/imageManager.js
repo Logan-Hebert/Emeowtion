@@ -99,12 +99,16 @@ const memeImages = [sadCat1, sadCat2, sadCat3, sadCat4, sadCat5,
                     mehCat1, mehCat2, mehCat3, mehCat4, mehCat5,
                     happyCat1, happyCat2, happyCat3, happyCat4, happyCat5,
                     sadDog1, sadDog2, sadDog3, sadDog4, sadDog5,
+                    mehDog1, mehDog2, mehDog3, mehDog4, mehDog5,
                     happyDog1, happyDog2, happyDog3, happyDog4, happyDog5,
                     sadHorse1, sadHorse2, sadHorse3, sadHorse4, sadHorse5,
+                    mehHorse1, mehHorse2, mehHorse3, mehHorse4, mehHorse5,
                     happyHorse1, happyHorse2, happyHorse3, happyHorse4, happyHorse5,
                     sadFish1, sadFish2, sadFish3, sadFish4, sadFish5,
+                    mehFish1, mehFish2, mehFish3, mehFish4, mehFish5,
                     happyFish1, happyFish2, happyFish3, happyFish4, happyFish5,
                     sadPanda1, sadPanda2, sadPanda3, sadPanda4, sadPanda5,
+                    mehPanda1, mehPanda2, mehPanda3, mehPanda4, mehPanda5,
                     happyPanda1, happyPanda2, happyPanda3, happyPanda4, happyPanda5];
 export default memeImages;
 

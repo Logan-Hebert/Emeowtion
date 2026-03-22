@@ -11,20 +11,39 @@ let data = []
 // x represents the day of the month (1-30)
 // y represents the mood (1-5)
 
+/*
 for (let i = 1; i < 31; i++) {
     data.push({
         x: i,
-        y: Math.ceil(Math.random() * 3),
+        y: Math.ceil(Math.random() * 5),
+    })
+}
+*/
+values = [1,5,1,5,1,5]
+for (let i = 0; i < values.length; i++) {
+    data.push({
+        x: i,
+        y: values[i]
     })
 }
 
-console.log(checkForDepression(data))
+
+console.log(calculateAverageDifference(data))
 
 function checkForDepression(data_array) {
     return (data_array.every((data_point) => {
         return data_point.y <= 3
     }))
 }
+
+function calculateAverageDifference(data_array) {
+    let sum = 0
+    for (let i = 0; i < data.length - 1; i++) {
+        sum += Math.abs(data_array[i].y - data_array[i + 1].y)
+    }
+    return sum / (data_array.length - 1)
+}
+
 
 
 console.log(data)

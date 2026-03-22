@@ -1,5 +1,6 @@
  .title {
-    background-image: linear-gradient(-5deg, var(--bs-accent-dark), var(--bs-primary-dark));
+     background: var(--bs-accent);
+
     font-family: 'Arial', sans-serif;
     color: #ffffff;
     margin: 0 auto;
@@ -48,7 +49,9 @@
     padding: 10px;
 }
 .test {
-  background: var(--bs-accent);
+    background-image: linear-gradient(-5deg, var(--bs-accent-dark), var(--bs-primary-dark));
+
+    overflow: hidden
 }
 
 

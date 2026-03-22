@@ -32,7 +32,7 @@ h1 {
 
 .wavy-line1 {
     position: absolute;
-    left: -11%;
+    left: -11.3%;
     height: 100%;
     width: 500px;
     background: url("../IMAGE-FOLDER/wavy-dash-svgrepo-com.svg") repeat-y;
@@ -44,7 +44,7 @@ h1 {
 .wavy-line2 {
     position: absolute;
     transform: scaleX(-1);
-    right: -11%;
+    right: -11.3%;
     height: 100%;
     width: 500px;
     background: url("../IMAGE-FOLDER/wavy-dash-svgrepo-com.svg") repeat-y;

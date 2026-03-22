@@ -1,4 +1,7 @@
+// I don't like typing semicolons, in case you were wondering. (- Python & Ruby user)
+
 const chartElement = document.querySelector("#myChart");
+const text = document.querySelector("#chartText");
 
 let data = []
 
@@ -19,7 +22,7 @@ for (let i = 1; i < 31; i++) {
     })
 }
 */
-values = [1,5,1,5,1,5]
+values = [2,5,1,4,1,3]
 for (let i = 0; i < values.length; i++) {
     data.push({
         x: i,
@@ -28,7 +31,18 @@ for (let i = 0; i < values.length; i++) {
 }
 
 
-console.log(calculateAverageDifference(data))
+if (calculateAverageDifference(data) >= 3) {
+    text.textContent = "It looks like your mood is fluctuating a lot. Try to build daily habits and routines, especially with your sleep schedule, to help stabilize your mood."
+}
+
+if (calculateAverageMood(data) <= 2.5) {
+    text.textContent = "It seems that you've been feeling pretty bad on average. Try to prioritize a healthy lifestyle; in particular, try to get some movement in throughout the day. Even a short walk outside can greatly improve your day!"
+}
+
+if (checkForDepression(data)) {
+    text.textContent = "You seem to be down a lot recently. Try organizing something fun with your friends soon!"
+}
+
 
 function checkForDepression(data_array) {
     return (data_array.every((data_point) => {
@@ -44,21 +58,25 @@ function calculateAverageDifference(data_array) {
     return sum / (data_array.length - 1)
 }
 
+function calculateAverageMood(data_array) {
+    return data_array.reduce((accumulator, currentValue) => accumulator + currentValue.y, 0) / data_array.length
+}
 
 
-console.log(data)
 
 labels = []
 for (let i = 1; i < 31; i++) {
     labels.push(i);
 }
-
+data.sort((a, b) => {
+    return a.x - b.x;
+})
 new_data = data.map((point) => {
     return point.y;
 });
 
 
-
+// Create the actual chart
 new Chart(chartElement, {
     type: 'line', // Can be 'line', 'pie', 'doughnut', etc.
     data: {

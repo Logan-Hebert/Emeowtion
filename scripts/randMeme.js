@@ -54,7 +54,7 @@ function displayMeme(moodAnimal, joyType, option){
     // document.getElementById("animal-type").innerHTML = moodAnimal;
     // document.getElementById("joy-meter").innerHTML = joyType;
     // document.getElementById("image-num").innerHTML = randOption;
-    document.getElementById('meme-image').src = `images/Memes/${moodAnimal}/${joyType}${moodAnimal}${option}.jpg` = memeImages[0];
+    document.getElementById('meme-image').src = `images/Memes/${moodAnimal}/${joyType}${moodAnimal}${option}.jpg`;
 }
 
 if  (joyMeter <= 2){

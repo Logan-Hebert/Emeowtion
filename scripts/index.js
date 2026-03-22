@@ -1,12 +1,19 @@
 // This will run on index.html when it is opened
 favPet = getCookie("favoritePet");
-console.log(document.getElementById('mood-image5').src = `images/MoodImages/happy${favPet}.png`);
-document.getElementById('mood-image1').src = `images/MoodImages/${favPet}/sad${favPet}.png`;
-document.getElementById('mood-image2').src = `images/MoodImages/${favPet}/grumpy${favPet}.png`;
-document.getElementById('mood-image3').src = `images/MoodImages/${favPet}/neutral${favPet}.png`;
-document.getElementById('mood-image4').src = `images/MoodImages/${favPet}/content${favPet}.png`;
-document.getElementById('mood-image5').src = `images/MoodImages/${favPet}/happy${favPet}.png`;
 
+// Basic error handling; will throw the user back to pet select if they haven't selected a pet yet
+if (favPet == "") {
+    window.alert("Please select a favorite pet on the setup page!");
+    window.location.href="cindex.html";
+} else{
+    console.log(document.getElementById('mood-image5').src = `images/MoodImages/happy${favPet}.png`);
+    document.getElementById('mood-image1').src = `images/MoodImages/${favPet}/sad${favPet}.png`;
+    document.getElementById('mood-image2').src = `images/MoodImages/${favPet}/grumpy${favPet}.png`;
+    document.getElementById('mood-image3').src = `images/MoodImages/${favPet}/neutral${favPet}.png`;
+    document.getElementById('mood-image4').src = `images/MoodImages/${favPet}/content${favPet}.png`;
+    document.getElementById('mood-image5').src = `images/MoodImages/${favPet}/happy${favPet}.png`;
+
+}
 
 const submit = document.getElementById('submitBtn')
 console.log(submit)
@@ -54,6 +61,7 @@ function handleSelection(value) {
 
     let history = getCookie("moodHistory");
 
+    // Boilerplate code to have chart data for presentation
     if (history) {
         history = JSON.parse(history);
     } else {

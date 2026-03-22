@@ -4,11 +4,12 @@ const chartElement = document.querySelector("#myChart");
 
 // Basic error handling; will throw the user back to mood select if there's no data to display
 
-if (getCookie("moodHistory") == "") {
+const moodHistory = JSON.parse(getCookie("moodHistory")) || [];
+
+if (!moodHistory) {
     alert("It looks like you haven't logged any moods yet! Try logging your mood every day to see some insights about your mood over time.");
     window.location.href = "/index.html";
 } else {
-    const moodHistory = JSON.parse(getCookie("moodHistory")) || [];
     console.log(moodHistory);
     const text = document.querySelector("#chartText");
 }

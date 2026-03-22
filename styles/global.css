@@ -22,8 +22,18 @@ body {
     min-height: 100vh;
     background: linear-gradient(-45deg, var(--bs-primary-dark), var(--bs-accent-dark));
     background-attachment: fixed;
+    background-size: 400% 400%;
+    animation: bg-move 10s ease infinite;
 }
 
+@keyframes bg-move {
+    0%, 100% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
 
 
 .btn-primary {
@@ -74,6 +84,11 @@ body {
 }
 
 #submitBtn:hover {
+    background-color: #ff81bc;
+    border-color: #ff81bc;
+    color: white;
+}
+#changePetBtn:hover {
     background-color: #ff81bc;
     border-color: #ff81bc;
     color: white;

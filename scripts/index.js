@@ -4,7 +4,7 @@ favPet = getCookie("favoritePet");
 // Basic error handling; will throw the user back to pet select if they haven't selected a pet yet
 if (favPet == "") {
     window.alert("Please select a favorite pet on the setup page!");
-    window.location.href="cindex.html";
+    window.location.href="cIndex.html";
 } else{
     console.log(document.getElementById('mood-image5').src = `images/MoodImages/happy${favPet}.png`);
     document.getElementById('mood-image1').src = `images/MoodImages/${favPet}/sad${favPet}.png`;
@@ -16,6 +16,11 @@ if (favPet == "") {
 }
 
 const submit = document.getElementById('submitBtn')
+const changePet = document.getElementById('changePetBtn')
+
+changePet.addEventListener("click", function() {
+    window.location.href = "cIndex.html";
+})
 console.log(submit)
 
 const pictureButtons = document.querySelectorAll('input[name="imageSelect"]');

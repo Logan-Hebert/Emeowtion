@@ -11,6 +11,13 @@ h1 {
   border-radius: 1.5rem;
 }
 
+#changePetBtn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-color: #FE9EC7;
+  border-radius: 1.5rem;
+}
+
 /* Wavy Line code */
 @keyframes mymove {
     0%, 100% {

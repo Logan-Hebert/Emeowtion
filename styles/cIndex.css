@@ -35,9 +35,55 @@ h1 {
 }
 
 h2 {
-    font-size: 6rem;
+    font-size: 7rem;
+    font-style:oblique;
     color: rgb(255, 255, 255);
 }
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+.eMEOWtions-text span {
+    display: inline-block;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.eMEOWtions-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.eMEOWtions-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.eMEOWtions-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.eMEOWtions-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.eMEOWtions-text span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.eMEOWtions-text span:nth-child(6) {
+    animation-delay: 1s;
+}
+.eMEOWtions-text span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+.eMEOWtions-text span:nth-child(8) {
+    animation-delay: 1.4s;
+}
+.eMEOWtions-text span:nth-child(9) {
+    animation-delay: 1.6s;
+}
+.eMEOWtions-text span:nth-child(10) {
+    animation-delay: 1.8s;
+}
+
 
 p {
     font-size: 2.5rem;
@@ -53,6 +99,9 @@ li {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 1.5rem;
+    border-color: white;
+    border-width: 10px;
+    border-style: solid;
     
 }
 
@@ -90,7 +139,7 @@ li:nth-child(3){
 li .details {
     position: absolute;
     left: 35%;
-    top: 75%;
+    top: 73%;
     font-size: 1.5rem;
 
 }

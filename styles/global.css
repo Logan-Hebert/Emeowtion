@@ -91,3 +91,16 @@ body {
     background-size: 100% 300px;
     animation: mymove 5s linear infinite;
 }
+
+.wavy-line2 {
+    position: absolute;
+    transform: scaleX(-1);
+    right: -11%;
+    height: 100%;
+    width: 500px;
+    background: url("../IMAGE-FOLDER/wavy-dash-svgrepo-com.svg") repeat-y;
+    background-position-x: right;
+    background-size: 100% 300px;
+    animation: mymove 5s linear infinite;
+}
+

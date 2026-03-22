@@ -59,6 +59,7 @@ function handleSelection(value) {
     // in like an array or list or something.
 
     const today = new Date();
+    const date = today.getDate();
     const moodToday = {
         day: today.getDate(),
         mood: value,
@@ -94,8 +95,14 @@ function handleSelection(value) {
             {day : 21, mood: 4},
             ];
     }
-
+    //Error correction, makes sure we don't have duplicate entries for a day
+    const existingEntryCheck = history.find(entry => entry.day === date);
+   
+    if (existingEntryCheck) {
+        existingEntryCheck.mood = value;
+    } else {
     history.push(moodToday);
+    }
 
     setCookie("moodHistory", JSON.stringify(history), 30);
 

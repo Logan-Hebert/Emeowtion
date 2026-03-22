@@ -152,6 +152,57 @@ li:nth-child(3){
  opacity: .25;
 }
 
+
+menu.move-left li:nth-child(4){
+    left: -10%;
+    opacity: 0;
+}
+
+menu.move-left li:nth-child(5){
+    left: 20%;
+    opacity: 0.25;
+}
+
+menu.move-left li:nth-child(1){
+    left: 50%;
+    opacity: .5
+}
+
+menu.move-left li:nth-child(2){
+    left: 80%;
+    opacity: 1;
+}
+
+menu.move-left li:nth-child(3){
+    left: 110%;
+    opacity: .5;
+}
+
+menu.move-right li:nth-child(4){
+    left: -10%;
+    opacity: .5;
+}
+
+menu.move-right li:nth-child(5){
+    left: 20%;
+    opacity: 1;
+}
+
+menu.move-right li:nth-child(1){
+    left: 50%;
+    opacity: .5
+}
+
+menu.move-right li:nth-child(2){
+    left: 80%;
+    opacity: .25;
+}
+
+menu.move-right li:nth-child(3){
+    left: 110%;
+    opacity: 0;
+}
+
 li .details {
     position: absolute;
     left: 35%;

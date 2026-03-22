@@ -26,7 +26,7 @@ submit.addEventListener("click", function() {
 
     console.log("Selected:", selected.value);
 
-    handleSelection(selected.value + 0);
+    handleSelection(selected.value);
 
 })
 
@@ -44,11 +44,11 @@ function handleSelection(value) {
 
     setCookie("moodDay" + new Date().getDate(), value, 30);
     getCookie("moodDay" + new Date().getDate());
-    if (value == 10 || value == 20) {
+    if (value == 1 || value == 2) {
         window.location.href = "sadness.html";
-    } else if (value == 30) {
+    } else if (value == 3) {
         window.location.href = "meh.html";
-    } else if (value == 40 || value == 50) {
+    } else if (value == 4 || value == 5) {
         window.location.href = "happy.html";
     }
 }

@@ -38,6 +38,10 @@ const formattedData = moodHistory.map(entry => ({
 }));
 
 
+const home = document.getElementById('home');
+home.addEventListener('click', () => {
+    window.location.href = "index.html";
+})
 
 if (calculateAverageDifference(formattedData) >= 3) {
     text.textContent = "It looks like your mood is fluctuating a lot. Try to build daily habits and routines, especially with your sleep schedule, to help stabilize your mood."

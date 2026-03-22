@@ -16,6 +16,7 @@ Emowtions is a mood journal that works on cheering your mood up using inspiratio
 # Important Links
 
 GitHub Repository: [Link](https://github.com/Logan-Hebert/Emeowtion)
+Quote links: [Link] https://medium.com/@arrryn123/43-quotes-on-happiness-funny-happy-quotes-sayings-5df18fe1726b
 
 # How to Run Dev and Test Environment
 

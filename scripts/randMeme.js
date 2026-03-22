@@ -57,8 +57,10 @@ function displayMeme(moodAnimal, joyType, option){
 
 if  (joyMeter <= 2){
     joyType = "badDay/sad";
+  } else if (joyMeter == 3){
+    joyType = "mehDay/happy";
   } else {
-    joyType = "goodNMehDay/happy";
+    joyType = "goodDay/happy";
   }
 zOpt = getRandOption(1, sadCatNum);
 displayMeme(moodAnimal, joyType, zOpt);

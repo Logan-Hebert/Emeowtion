@@ -29,7 +29,7 @@ h1 {
     width: 500px;
     background: url("../IMAGE-FOLDER/wavy-dash-svgrepo-com.svg") repeat-y;
     background-position-x: left;
-    background-size: 100% 400px;
+    background-size: 100% 325px;
     animation: mymove 5s linear infinite;
 }
 
@@ -41,7 +41,7 @@ h1 {
     width: 500px;
     background: url("../IMAGE-FOLDER/wavy-dash-svgrepo-com.svg") repeat-y;
     background-position-x: right;
-    background-size: 100% 400px;
+    background-size: 100% 325px;
     animation: mymove 5s linear infinite;
 }
 

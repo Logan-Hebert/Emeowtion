@@ -91,6 +91,7 @@ function handleSelection(value) {
             {day : 18, mood: 1},
             {day : 19, mood: 5},
             {day : 20, mood: 3},
+            {day : 21, mood: 4},
             ];
     }
 

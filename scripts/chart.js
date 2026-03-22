@@ -8,6 +8,8 @@ let data = []
 //   x: 1,
 //   y: 4
 // }
+// x represents the day of the month (1-30)
+// y represents the mood (1-5)
 
 for (let i = 1; i < 31; i++) {
     data.push({

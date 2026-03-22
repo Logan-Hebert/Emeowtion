@@ -46,7 +46,7 @@ prevBtn.addEventListener("click", () => {
     const cards = document.querySelectorAll('li');
     menu.classList.add('move-right');
     setTimeout(() => {
-      menu.appendChild(cards[0])
-      menu.classList.remove('move-right');
+        menu.prepend(cards[cards.length - 1])
+        menu.classList.remove('move-right');
     }, 300)
 });

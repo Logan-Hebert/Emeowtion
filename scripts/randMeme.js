@@ -78,6 +78,13 @@ if  (joyMeter <= 2){
 zOpt = optionPicker();
 displayMeme(moodAnimal, joyType, zOpt);
 
+document.getElementById("changeMoodBtn").addEventListener("click", () => {
+  window.location.href="index.html"; // go back
+});
+document.getElementById("chartBtn").addEventListener("click", () => {
+  window.location.href="chart.html"; // mood history
+});
+
 
   
 

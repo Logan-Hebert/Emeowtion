@@ -1,41 +1,7 @@
 /* This css file will be applied to all html files */
 
-/* This css file will be applied to all html files */
 
-:root{
-
-    --bs-primary: #feb5d1;
-    --bs-primary-half-dark: #A3C0C8;
-    --bs-primary-dark: #FE9EC7;
-    --bs-primary-double-dark: #6c8184;
-    --bs-secondary: #ECEEDF;
-    --bs-accent: #D9C4B0;
-    --bs-accent-dark: #CFAB8D;
-}
-
-body {
-    background: linear-gradient(-45deg, var(--bs-primary-dark), var(--bs-accent-dark));
-}
-
-.btn-primary {
-    --bs-btn-bg: var(--bs-primary);
-    --bs-btn-border-color: var(--bs-primary);
-
-    --bs-btn-hover-bg: var(--bs-primary-dark);
-    --bs-btn-hover-border-color: var(--bs-primary-dark);
-
-    --bs-btn-active-bg: var(--bs-primary-dark);
-    --bs-btn-active-border-color: var(--bs-primary-dark);
-}
-
-.btn-primary:hover {
-    background-color: #8fa9b0;
-    border-color: var(--bs-primary-dark);
-
-}
-
-
-:root{
+:root {
 
     --bs-primary: #feb5d1;
     --bs-primary-half-dark: #A3C0C8;
@@ -46,8 +12,15 @@ body {
     --bs-accent-dark: #CFAB8D;
 }
 
+html,
 body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
     background: linear-gradient(-45deg, var(--bs-primary-dark), var(--bs-accent-dark));
+    background-attachment: fixed;
 }
 
 .btn-primary {
@@ -57,19 +30,20 @@ body {
     --bs-btn-hover-bg: var(--bs-primary-dark);
     --bs-btn-hover-border-color: var(--bs-primary-dark);
 
-.btn-secondary {
-    background-color: var(--bs-secondary);
-    border-color: var(--bs-secondary);
-}
+    .btn-secondary {
+        background-color: var(--bs-secondary);
+        border-color: var(--bs-secondary);
+    }
 
-.btn-secondary:hover {
-    background-color: #afb2a4;
-    border-color: #afb2a4;
-}
+    .btn-secondary:hover {
+        background-color: #afb2a4;
+        border-color: #afb2a4;
+    }
 
-.btn-outline-success {
-    border-color: var(--bs-success);
-}
+    .btn-outline-success {
+        border-color: var(--bs-success);
+    }
+
     --bs-btn-active-bg: var(--bs-primary-dark);
     --bs-btn-active-border-color: var(--bs-primary-dark);
 }
@@ -95,3 +69,38 @@ body {
 .btn-outline-success {
     border-color: var(--bs-success);
 }
+
+/* Wavy Line code */
+
+@keyframes mymove {
+   from {
+    background-position-y: 0;
+  }
+  to {
+    background-position-y: 300px; 
+  }
+}
+
+.wavy-line1 {
+    position: absolute;
+    left: -11%;
+    height: 100%;
+    width: 500px;
+    background: url("../IMAGE-FOLDER/wavy-dash-svgrepo-com.svg") repeat-y;
+    background-position-x: left;
+    background-size: 100% 300px;
+    animation: mymove 5s linear infinite;
+}
+
+.wavy-line2 {
+    position: absolute;
+    transform: scaleX(-1);
+    right: -11%;
+    height: 100%;
+    width: 500px;
+    background: url("../IMAGE-FOLDER/wavy-dash-svgrepo-com.svg") repeat-y;
+    background-position-x: right;
+    background-size: 100% 300px;
+    animation: mymove 5s linear infinite;
+}
+

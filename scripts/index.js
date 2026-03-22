@@ -44,4 +44,11 @@ function handleSelection(value) {
 
     setCookie("moodDay" + new Date().getDate(), value, 30);
     getCookie("moodDay" + new Date().getDate());
+    if (value == 10 || value == 20) {
+        window.location.href = "sadness.html";
+    } else if (value == 30) {
+        window.location.href = "meh.html";
+    } else if (value == 40 || value == 50) {
+        window.location.href = "happy.html";
+    }
 }

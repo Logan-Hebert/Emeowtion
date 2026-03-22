@@ -5,16 +5,6 @@ const moodHistory = JSON.parse(getCookie("moodHistory")) || [];
 console.log(moodHistory);
 const text = document.querySelector("#chartText");
 
-let data = []
-
-// TODO: Get data from cookies
-// Format for data:
-// {
-//   x: 1,
-//   y: 4
-// }
-// x represents the day of the month (1-30)
-// y represents the mood (1-5)
 
 /*
 for (let i = 1; i < 31; i++) {
@@ -33,22 +23,24 @@ for (let i = 0; i < values.length; i++) {
 }
 */
 
-if (calculateAverageDifference(data) >= 3) {
-    text.textContent = "It looks like your mood is fluctuating a lot. Try to build daily habits and routines, especially with your sleep schedule, to help stabilize your mood."
-}
-
-if (calculateAverageMood(data) <= 2.5) {
-    text.textContent = "It seems that you've been feeling pretty bad on average. Try to prioritize a healthy lifestyle; in particular, try to get some movement in throughout the day. Even a short walk outside can greatly improve your day!"
-}
-
-if (checkForDepression(data)) {
-    text.textContent = "You seem to be down a lot recently. Try organizing something fun with your friends soon!"
-}
-
 const formattedData = moodHistory.map(entry => ({
     x: entry.day,
     y: parseInt(entry.mood)
 }));
+
+
+if (calculateAverageDifference(formattedData) >= 3) {
+    text.textContent = "It looks like your mood is fluctuating a lot. Try to build daily habits and routines, especially with your sleep schedule, to help stabilize your mood."
+}
+
+if (calculateAverageMood(formattedData) <= 2.5) {
+    text.textContent = "It seems that you've been feeling pretty bad on average. Try to prioritize a healthy lifestyle; in particular, try to get some movement in throughout the day. Even a short walk outside can greatly improve your day!"
+}
+
+if (checkForDepression(formattedData)) {
+    text.textContent = "You seem to be down a lot recently. Try organizing something fun with your friends soon!"
+}
+
 
 function checkForDepression(data_array) {
     return (data_array.every((data_point) => {
@@ -58,7 +50,7 @@ function checkForDepression(data_array) {
 
 function calculateAverageDifference(data_array) {
     let sum = 0
-    for (let i = 0; i < data.length - 1; i++) {
+    for (let i = 0; i < data_array.length - 1; i++) {
         sum += Math.abs(data_array[i].y - data_array[i + 1].y)
     }
     return sum / (data_array.length - 1)
@@ -74,10 +66,10 @@ labels = []
 for (let i = 1; i < 31; i++) {
     labels.push(i);
 }
-data.sort((a, b) => {
+formattedData.sort((a, b) => {
     return a.x - b.x;
 })
-new_data = data.map((point) => {
+new_data = formattedData.map((point) => {
     return point.y;
 });
 

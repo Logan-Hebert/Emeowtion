@@ -12,14 +12,15 @@ h1 {
 }
 
 /* Wavy Line code */
-
 @keyframes mymove {
-   from {
-    background-position-y: 0;
-  }
-  to {
-    background-position-y: 300px; 
-  }
+    0%, 100% {
+        background-position-y: 0;
+        animation-timing-function: ease-in-out;
+    }
+    50% {
+        background-position-y: 250px;
+        animation-timing-function: ease-in-out;
+    }
 }
 
 .wavy-line1 {
@@ -30,7 +31,7 @@ h1 {
     background: url("../IMAGE-FOLDER/wavy-dash-svgrepo-com.svg") repeat-y;
     background-position-x: left;
     background-size: 100% 325px;
-    animation: mymove 5s linear infinite;
+    animation: mymove 10s linear infinite;
 }
 
 .wavy-line2 {
@@ -42,6 +43,6 @@ h1 {
     background: url("../IMAGE-FOLDER/wavy-dash-svgrepo-com.svg") repeat-y;
     background-position-x: right;
     background-size: 100% 325px;
-    animation: mymove 5s linear infinite;
+    animation: mymove 10s linear infinite;
 }
 

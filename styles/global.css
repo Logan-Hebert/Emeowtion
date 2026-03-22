@@ -14,6 +14,7 @@
 
 html,
 body {
+    font-family: "Comic Neue", sans-serif;
     height: 100%;
 }
 
@@ -22,6 +23,8 @@ body {
     background: linear-gradient(-45deg, var(--bs-primary-dark), var(--bs-accent-dark));
     background-attachment: fixed;
 }
+
+
 
 .btn-primary {
     --bs-btn-bg: var(--bs-primary);
@@ -88,7 +91,7 @@ body {
     width: 500px;
     background: url("../IMAGE-FOLDER/wavy-dash-svgrepo-com.svg") repeat-y;
     background-position-x: left;
-    background-size: 100% 300px;
+    background-size: 100% 600px;
     animation: mymove 5s linear infinite;
 }
 
@@ -100,7 +103,7 @@ body {
     width: 500px;
     background: url("../IMAGE-FOLDER/wavy-dash-svgrepo-com.svg") repeat-y;
     background-position-x: right;
-    background-size: 100% 300px;
+    background-size: 100% 600px;
     animation: mymove 5s linear infinite;
 }
 

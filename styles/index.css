@@ -1,0 +1,12 @@
+h1 {
+    font-size: 5rem;
+    font-style:oblique;
+    color: rgb(255, 255, 255);
+}
+
+#submitBtn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-color: #FE9EC7;
+  border-radius: 1.5rem;
+}

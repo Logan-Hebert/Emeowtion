@@ -1,53 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="styles/global.css" rel="stylesheet">
-    <link href="styles/happy.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&display=swap" rel="stylesheet"> -->
-  <script type="module" src="../images/Memes/imageManager.js"></script>
-</head>
-<body class="test">
-<!-- <div class="row">
-  <div class="col-md-8 offset-md-2"> -->
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="styles/global.css" rel="stylesheet">
+      <link href="styles/happy.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+      rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script type="module" src="../images/Memes/imageManager.js"></script>
+  </head>
+  <body class="test">
     <div class="title jumbotron jumbotron-fluid text-center">
       <div class="container">
         <h1 class="display-4">We're so glad you're happy!</h1>
         <p class="fw-bold fs-3">Let's be even more joyous with a <span id="animal-type"></span> meme!</p>
-        <script src="./scripts/getAnimalTy.js"></script>
+        <script src="./scripts/getAnimalTy.js" defer></script>
       </div>
     </div>
-
-
-<!-- UPLOAD A FILE:
- <input type="file" id="folderInput" webkitdirectory multiple>
-<script src="./scripts/randMeme.js"></script> -->
-
-<div class="container">
-  <picture>
-    <p class="text-center">
-      <img id="meme-image" src="" class="img-fluid meme" alt="If you see this, we've failed">
-    </p>
-  </picture>
-  <script type="module" src="./scripts/randMeme.js"></script>
-</div>
-
-<div class="container mt-1 text-center">
-  <blockquote class="blockquote text-center">
-    <p class="mb-0 quoteFoot"><span id="quote-full"></span></p>
-    <footer class="blockquote-footer"><span id="quote-author"></span></footer>
-  </blockquote>
-  <script type= "module" src="./scripts/randQuote.js"></script>
-</div>
-<script src="./scripts/global.js"></script>
-</body>
+    <div class="container">
+      <picture>
+        <p class="text-center">
+          <img id="meme-image" src="" class="img-fluid meme" alt="If you see this, we've failed">
+        </p>
+      </picture>
+      <script type="module" src="./scripts/randMeme.js"></script>
+    </div>
+    <div class="container mt-1 text-center">
+      <blockquote class="blockquote text-center">
+        <p class="mb-0 quoteFoot"><span id="quote-full"></span></p>
+        <footer class="blockquote-footer"><span id="quote-author"></span></footer>
+      </blockquote>
+      <script type= "module" src="./scripts/randQuote.js"></script>
+    </div>
+    <script src="./scripts/global.js"></script>
+  </body>
 </html>

@@ -1,24 +1,24 @@
 //not using node.js, so need to put file nums manually since cant directly read files from folders.
 //THIS IS FOR MEME IMAGES ONLY
-// let catMemeNum, dogMemeNum, horseMemeNum, fishMemeNum, pandaMemeNum, totalMemeNum;
+//although all are 5, this is in case we want to add more memes for certain animals/joy levels in the future.
 
-const sadCatNum =  2;
-const sadDogNum = 1;
-const sadHorseNum = 1;
-const sadFishNum = 1;
-const sadPandaNum = 1;
+const sadCatNum =  5;
+const sadDogNum = 5;
+const sadHorseNum = 5;
+const sadFishNum = 5; 
+const sadPandaNum = 5;
 
-const happyCatNum = 1;
-const happyDogNum = 1;
-const happyHorseNum = 3;
-const happyFishNum = 1;
-const happyPandaNum = 1;
+const happyCatNum = 5;
+const happyDogNum = 5;
+const happyHorseNum = 5;
+const happyFishNum = 5;
+const happyPandaNum = 5;
 
-const midCatNum = 1;
-const midDogNum = 1;
-const midHorseNum = 1;
-const midFishNum = 1;
-const midPandaNum = 1;
+const midCatNum = 5;
+const midDogNum = 5;
+const midHorseNum = 5;
+const midFishNum = 5;
+const midPandaNum = 5;
 
 // catMemeNum = sadCatNum + happyCatNum + midCatNum;
 // dogMemeNum = sadDogNum + happyDogNum;

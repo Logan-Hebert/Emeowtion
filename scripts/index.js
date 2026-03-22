@@ -16,6 +16,11 @@ if (favPet == "") {
 }
 
 const submit = document.getElementById('submitBtn')
+const changePet = document.getElementById('changePetBtn')
+
+changePet.addEventListener("click", function() {
+    window.location.href = "cindex.html";
+})
 console.log(submit)
 
 const pictureButtons = document.querySelectorAll('input[name="imageSelect"]');

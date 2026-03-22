@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -11,9 +11,9 @@ body {
 }
 
 section {
-    width: 100%;
-    height: 60rem;
-    /*background-color: rgba(255, 162, 162, 0.863);*/
+    width:80vw;
+    height: 90vh;
+    /* background-color: rgba(255, 4, 4, 0.863); */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,27 +21,55 @@ section {
      overflow: hidden;
 }
 
+article {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+}
+
+
 li {
-    width: 18rem;
-    height: 20rem;
-    position:absolute;
-    top: 50%;
+    width: 20vw;
+    height: 30vh;
+    position: absolute;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 1.5rem;
-    border: 0.2rem solid #000;
-    font-size: 0.5rem;
-    /* transition: all 1s ease-in-out; */
+    
+}
+
+li p {
+    color:  rgb(255, 177, 177);
+     font-size: 4rem;
+     font-weight: bold;
 }
 
 li:nth-child(4){
  left: -10%;
- opacity: 0.2;
+ opacity: 0;
 }
 
 li:nth-child(5){
  left: 20%;
- opacity: 0.7;
+ opacity: 0.5;
 }
 
 li:nth-child(1){
@@ -50,39 +78,39 @@ li:nth-child(1){
 
 li:nth-child(2){
  left: 80%;
- opacity: 0.7;
+ opacity: 0.5;
+ transition: all 300ms ease;
 }
 
 li:nth-child(3){
  left: 110%;
- opacity: 0.2;
+ opacity: 0;
 }
 
 li .details {
     position: absolute;
     left: 35%;
     top: 75%;
-    color: pink;
     font-size: 1.5rem;
 
 }
 .controls {
     position: absolute;
-    bottom: 3rem;
+    bottom: 10vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 1.5rem;
+    gap: 2vw;
 }
 
 .controls button {
     border: 0;
-    width: 5.4rem;
+    width: 6vw;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    font-size: 4.4rem;
+    font-size: 3.5rem;
     cursor: pointer;
-    transform: all 300ms ease;
+    transition: all 100ms ease;
 }
 
 .controls button:hover {

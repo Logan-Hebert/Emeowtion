@@ -109,6 +109,7 @@ new Chart(chartElement, {
                 type: 'linear',
                 position: 'bottom',
                 min: 1,
+                max: formattedData.length,
             },
             y: {
                 type: 'linear',

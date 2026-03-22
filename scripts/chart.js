@@ -12,12 +12,17 @@ let data = []
 for (let i = 1; i < 31; i++) {
     data.push({
         x: i,
-        y: Math.ceil(Math.random() * 5),
+        y: Math.ceil(Math.random() * 3),
     })
 }
 
+console.log(checkForDepression(data))
 
-
+function checkForDepression(data_array) {
+    return (data_array.every((data_point) => {
+        return data_point.y <= 3
+    }))
+}
 
 
 console.log(data)
@@ -74,6 +79,7 @@ new Chart(chartElement, {
                     stepSize: 1,
                 },
                 min: 0,
+                max: 5,
             }
         }
     }

@@ -94,8 +94,8 @@ new Chart(chartElement, {
                 }
 
                 const gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
-                gradient.addColorStop(0, 'rgba(255, 99, 132, 0)')
-                gradient.addColorStop(1, 'rgba(255, 99, 132, 0.5)')
+                gradient.addColorStop(0, 'rgba(149,247,249, 0.2)')
+                gradient.addColorStop(1, 'rgba(255, 99, 132, 0.3)')
 
                 return gradient;
             },
@@ -115,8 +115,14 @@ new Chart(chartElement, {
                 type: 'linear',
                 ticks: {
                     stepSize: 1,
+                    callback: (value) => {
+                        if (value == 1) return "Sad";
+                        if (value == 3) return "Meh";
+                        if (value == 5) return "Happy";
+                        return "";
+                    }
                 },
-                min: 0,
+                min: 1,
                 max: 5,
             }
         }

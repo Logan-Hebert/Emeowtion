@@ -73,3 +73,8 @@ body {
     border-color: var(--bs-success);
 }
 
+#submitBtn:hover {
+    background-color: #ff81bc;
+    border-color: #ff81bc;
+    color: white;
+}

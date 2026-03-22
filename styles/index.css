@@ -10,3 +10,38 @@ h1 {
   border-color: #FE9EC7;
   border-radius: 1.5rem;
 }
+
+/* Wavy Line code */
+
+@keyframes mymove {
+   from {
+    background-position-y: 0;
+  }
+  to {
+    background-position-y: 300px; 
+  }
+}
+
+.wavy-line1 {
+    position: absolute;
+    left: -11%;
+    height: 100%;
+    width: 500px;
+    background: url("../IMAGE-FOLDER/wavy-dash-svgrepo-com.svg") repeat-y;
+    background-position-x: left;
+    background-size: 100% 400px;
+    animation: mymove 5s linear infinite;
+}
+
+.wavy-line2 {
+    position: absolute;
+    transform: scaleX(-1);
+    right: -11%;
+    height: 100%;
+    width: 500px;
+    background: url("../IMAGE-FOLDER/wavy-dash-svgrepo-com.svg") repeat-y;
+    background-position-x: right;
+    background-size: 100% 400px;
+    animation: mymove 5s linear infinite;
+}
+

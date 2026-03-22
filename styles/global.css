@@ -2,7 +2,8 @@
 
 
 :root {
-
+   
+     
     --bs-primary: #feb5d1;
     --bs-primary-half-dark: #A3C0C8;
     --bs-primary-dark: #FE9EC7;
@@ -67,8 +68,6 @@ body {
 
 }
 
-
-
 .btn-secondary {
     background-color: var(--bs-secondary);
     border-color: var(--bs-secondary);
@@ -83,13 +82,46 @@ body {
     border-color: var(--bs-success);
 }
 
+#chartBtn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-color: #FE9EC7;
+  border-radius: 1.5rem;
+  width: 20vw;
+  height: 10vh;
+  border-width: 5px;
+}
+#changeMoodBtn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-color: #FE9EC7;
+  border-radius: 1.5rem;
+  border-width: 5px;
+}
+
+#submitBtn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-color: #FE9EC7;
+  border-radius: 1.5rem;
+}
+#changePetBtn {
+background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-color: #FE9EC7;
+  border-radius: 1.5rem;
+}
+
+#chartBtn:hover {
+   background-color: rgb(255, 177, 177);
+}
+#changeMoodBtn:hover {
+     background-color: rgb(255, 177, 177);
+}
+
 #submitBtn:hover {
-    background-color: #ff81bc;
-    border-color: #ff81bc;
-    color: white;
+    background-color: rgb(255, 177, 177);
 }
 #changePetBtn:hover {
-    background-color: #ff81bc;
-    border-color: #ff81bc;
-    color: white;
+     background-color: rgb(255, 177, 177);
 }

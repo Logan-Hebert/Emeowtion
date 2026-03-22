@@ -1,4 +1,3 @@
-const anim = "cat"; 
-// import { getAnimalType } from "./index.js";
-// animal = getAnimalType();
+let anim = getCookie("favoritePet");
+console.log(anim);
 document.getElementById("animal-type").innerHTML = anim;

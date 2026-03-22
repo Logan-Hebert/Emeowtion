@@ -10,8 +10,20 @@ function setCookie(name, value, days) {
 };
 
 function getCookie(name) {
+    const cName = `${name}=`;
     const cookie = decodeURIComponent(document.cookie);
-    console.log(cookie);
+    const cookieArr = cookie.split(';');
+    for (let i = 0; i < cookieArr.length; i++) {
+        let c = cookieArr[i];
+        while (c.charAt(0) === ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(cName) == 0) {
+            return c.substring(cName.length, c.length);
+        }
+    }
+    return "";
+    console.log(cName);
 }
 
 function deleteCookie(name) {

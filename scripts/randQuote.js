@@ -1,44 +1,37 @@
-// import { getJoyMeter(); } from "./index.js";
-let joyLevel = 1;
-// joyLevel = getJoyMeter();
+const MooHis = JSON.parse(getCookie("moodHistory")) || [];
+let joyLevel = MooHis[MooHis.length - 1].mood;
+console.log(joyLevel);
 
-
-
-
-
-
-
-
-const happy = ["Happiness depends upon ourselves.", "The best thing about the future is that it comes one day at a time.",
-     "Happiness is not something ready made. It comes from your own actions."]; 
+const happy = ["\"Happiness depends upon ourselves.\"", "\"The best thing about the future is that it comes one day at a time.\"", 
+     "\"Happiness is not something ready made. It comes from your own actions.\""]; 
 const happyAuthors = ["Aristotle", "Abraham Lincoln", "Dalai Lama"];
-const mid = ["Whatever you decide to do make sure it makes you happy.", 
-    "If you want to live a happy life, tie it to a goal, not to people or things.", 
-    "Learn to let go. That is the key to happiness."];
+const mid = ["\"Whatever you decide to do make sure it makes you happy.\"", 
+    "\"If you want to live a happy life, tie it to a goal, not to people or things.\"", 
+    "\"Learn to let go. That is the key to happiness.\""];
 const midAuthors = ["Paulo Coelho", "Albert Einstein", "Buddha"];
-const sad = ["Don’t cry because it’s over, smile because it happened.", "Happiness is a journey, not a destination.",
-     "Action may not always bring happiness; but there is no happiness without action."];
+const sad = ["\"Don’t cry because it’s over, smile because it happened.\"", "\"Happiness is a journey, not a destination.\"", 
+     "\"Action may not always bring happiness; but there is no happiness without action.\""];
 const sadAuthors = ["Dr. Seuss", "Ben Sweetland", "Benjamin Disraeli"];
- function getRandomHappy(min=0, max=happy.length-1) {
-    const rand = Math.floor(Math.random() * (max - min + 1)) + min;
+
+
+
+
+function getRandomHappy() {
+    
+    const rand = Math.floor(Math.random() * happy.length);
     let arr = happy[rand];
-     return [arr, happyAuthors[rand]];
+    return [arr, happyAuthors[rand]];
  }
 
-// console.log(getRandomHappy()); 
+function getRandomMid() {
 
-function getRandomMid(min=0, max=mid.length-1) {
-
-    const rand = Math.floor(Math.random() * (max - min + 1)) + min;
+    const rand = Math.floor(Math.random() *  mid.length);
     let arr = mid[rand]; 
     return [arr, midAuthors[rand]];
 }
+function getRandomSad() {
 
-//console.log(getRandomMid()); 
-
-function getRandomSad(min=0, max=sad.length-1) {
-
-    const rand = Math.floor(Math.random() * (max - min + 1)) + min;
+    const rand = Math.floor(Math.random() *  sad.length);
     let arr = sad[rand]; 
     return [arr, sadAuthors[rand]];
 }

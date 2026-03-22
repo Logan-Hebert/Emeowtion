@@ -77,7 +77,7 @@ function calculateAverageMood(data_array) {
 
 
 labels = []
-for (let i = 1; i < 31; i++) {
+for (let i = 1; i < 1000; i++) {
     labels.push(i);
 }
 formattedData.sort((a, b) => {

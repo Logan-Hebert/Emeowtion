@@ -77,6 +77,8 @@ if  (joyMeter <= 2){
   }
 zOpt = optionPicker();
 displayMeme(moodAnimal, joyType, zOpt);
+
+
   
 
 
@@ -97,13 +99,6 @@ displayMeme(moodAnimal, joyType, zOpt);
 
 
 
-//for inputing files
-// //document.getElementById("animal-type").innerHTML = animal;
-//   document.getElementById('folderInput').addEventListener('change', (event) => {
-//     const files = event.target.files;
-//     const countElement = document.getElementById('fileCount');
-//     countElement.textContent = `${files.length} files selected`;
-//   });
 
 
 

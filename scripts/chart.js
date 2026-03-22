@@ -1,9 +1,17 @@
 // I don't like typing semicolons, in case you were wondering. (- Python & Ruby user)
 
 const chartElement = document.querySelector("#myChart");
-const moodHistory = JSON.parse(getCookie("moodHistory")) || [];
-console.log(moodHistory);
-const text = document.querySelector("#chartText");
+
+// Basic error handling; will throw the user back to mood select if there's no data to display
+
+if (getCookie("moodHistory") == "") {
+    alert("It looks like you haven't logged any moods yet! Try logging your mood every day to see some insights about your mood over time.");
+    window.location.href = "/index.html";
+} else {
+    const moodHistory = JSON.parse(getCookie("moodHistory")) || [];
+    console.log(moodHistory);
+    const text = document.querySelector("#chartText");
+}
 
 
 /*
@@ -27,6 +35,7 @@ const formattedData = moodHistory.map(entry => ({
     x: entry.day,
     y: parseInt(entry.mood)
 }));
+
 
 
 if (calculateAverageDifference(formattedData) >= 3) {

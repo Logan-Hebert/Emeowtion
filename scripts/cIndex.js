@@ -34,11 +34,19 @@ document.getElementById('menu').addEventListener('click', function(event) {
 nextBtn.addEventListener("click", () => {
     const menu = document.querySelector('menu');
     const cards = document.querySelectorAll('li');
-    menu.appendChild(cards[0])
+    menu.classList.add('move-left');
+    setTimeout(() => {
+      menu.appendChild(cards[0])
+      menu.classList.remove('move-left');
+    }, 300)
 });
 
 prevBtn.addEventListener("click", () => {
     const menu = document.querySelector('menu');
     const cards = document.querySelectorAll('li');
-    menu.prepend(cards[cards.length - 1])
+    menu.classList.add('move-right');
+    setTimeout(() => {
+      menu.appendChild(cards[0])
+      menu.classList.remove('move-right');
+    }, 300)
 });

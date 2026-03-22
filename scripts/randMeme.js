@@ -9,6 +9,8 @@ let zOpt, joyType;
 //joyMeter = getJoyMeter();
 // moodAnimal = getAnimalType();
 
+
+
 function getRandOption(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -52,7 +54,7 @@ function displayMeme(moodAnimal, joyType, option){
     // document.getElementById("animal-type").innerHTML = moodAnimal;
     // document.getElementById("joy-meter").innerHTML = joyType;
     // document.getElementById("image-num").innerHTML = randOption;
-    document.getElementById('meme-image').src = `images/Memes/${moodAnimal}/${joyType}${moodAnimal}${option}.jpg`;
+    document.getElementById('meme-image').src = `images/Memes/${moodAnimal}/${joyType}${moodAnimal}${option}.jpg` = memeImages[0];
 }
 
 if  (joyMeter <= 2){
@@ -62,6 +64,8 @@ if  (joyMeter <= 2){
   }
 zOpt = getRandOption(1, sadCatNum);
 displayMeme(moodAnimal, joyType, zOpt);
+
+
   
 
 
